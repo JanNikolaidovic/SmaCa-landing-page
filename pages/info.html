@@ -8,6 +8,35 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        :root {
+            --bs-primary: #264653;
+            --bs-secondary: #2a9d8f;
+            --bs-light: #f1faee;
+            --bs-dark: #1d3557;
+        }
+
+        #carouselExampleControls {
+            max-height: 400px; /* Adjust as needed */
+            overflow: hidden;
+        }
+
+        #carouselExampleControls .carousel-item img {
+            object-fit: contain;
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            background-color: var(--bs-light);
+            font-family: 'Inter', sans-serif;
+            }
+
+</style>
+
 </head>
 
 <body>
@@ -16,22 +45,46 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="../index.html"> SmaCa | Smart Campus</a>
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+            <img src="../images/SmaCa_logo_2.webp" width="100" height="100" class="d-inline-block align-text-top me-2" alt="SmaCa Logo">
+            </a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="./pages/info.html">Πληροφορίες</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./partners.html">Εταίροι</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contact.html">Επικοινωνία</a></li>
-                </ul>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="./pages/info.html">Πληροφορίες</a></li>
+                <li class="nav-item"><a class="nav-link" href="./partners.html">Εταίροι</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contact.html">Επικοινωνία</a></li>
+            </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Code section -->
+
+     <!-- Info Section -->
+    <section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="mb-4 text-center">Σχετικά με το Έργο Smart Campus (SmaCa)</h2>
+        <p class="lead text-muted">
+        Το έργο <strong>Smart Campus (SmaCa)</strong> αποτελεί μια ερευνητική πρωτοβουλία του Πανεπιστημίου Πειραιώς στο πλαίσιο της
+        δράσης «Συμπράξεις Ερευνητικής Αριστείας», χρηματοδοτούμενο από το Ταμείο Ανάκαμψης και Ανθεκτικότητας «Ελλάδα 2.0». Βασικός στόχος του έργου είναι ο ψηφιακός
+        μετασχηματισμός του πανεπιστημιακού περιβάλλοντος μέσω της ενσωμάτωσης τεχνολογιών Διαδικτύου των Πραγμάτων (IoT) και Τεχνητής Νοημοσύνης (AI).
+        Το SmaCa προτείνει την ανάπτυξη ενός ολοκληρωμένου Συστήματος Πληροφοριών Διαχείρισης, ικανού να συλλέγει, αναλύει και αξιοποιεί δεδομένα σε πραγματικό χρόνο για τη
+        βελτιστοποίηση της ενεργειακής αποδοτικότητας, των περιβαλλοντικών συνθηκών και της ασφάλειας στους χώρους του πανεπιστημίου.
+        </p>
+        <p class="text-muted">
+        Η πιλοτική εφαρμογή του έργου επικεντρώνεται σε τρεις βασικούς τομείς: τη <strong>βιώσιμη διαχείριση ενέργειας</strong>, τη <strong>βελτίωση της ασφάλειας</strong> και την <strong>ενίσχυση της
+            εκπαιδευτικής εμπειρίας</strong>. Μέσω της χρήσης αισθητήρων περιβάλλοντος, ευφυών καμερών και αλγορίθμων AI,
+            επιτυγχάνεται η αυτοματοποίηση κρίσιμων λειτουργιών και η δημιουργία εξατομικευμένων μαθησιακών περιβαλλόντων.
+            Επιπλέον, η διαδραστική τεχνολογία και η χρήση εικονικών βοηθών καθιστούν την εμπειρία διδασκαλίας και μάθησης πιο προσιτή,
+            αποτελεσματική και ανθρώπινο-κεντρική. Το SmaCa φιλοδοξεί να αποτελέσει πρότυπο για την ψηφιακή μετάβαση των εκπαιδευτικών ιδρυμάτων στην Ελλάδα και διεθνώς.
+        </p>
+    </div>
+    </section>
+
 
 
 
