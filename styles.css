@@ -1,0 +1,47 @@
+:root {
+    --bs-primary: #264653;
+    --bs-secondary: #2a9d8f;
+    --bs-light: #f1faee;
+    --bs-dark: #1d3557;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: var(--bs-light);
+    font-family: 'Inter', sans-serif;
+    flex: 1;
+}
+
+.main-content {
+    flex: 1;
+}
+
+#carouselExampleControls {
+    max-height: 400px;
+    overflow: hidden;
+}
+
+#carouselExampleControls .carousel-item img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.navbar-brand img {
+    animation: zoomInLogo 1s ease forwards;
+}
+
+@keyframes zoomInLogo {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(2);
+    }
+}
